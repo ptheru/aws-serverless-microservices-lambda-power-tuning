@@ -15,8 +15,7 @@ def lambda_handler(event, context):
       - tableName: required for operations that interact with DynamoDB
       - payload: parameters passed to the selected operation
     """
-    # Uncomment when debugging. Avoid logging sensitive production data.
-    # print("Received event: " + json.dumps(event, indent=2))
+
 
     operation = event["operation"]
 

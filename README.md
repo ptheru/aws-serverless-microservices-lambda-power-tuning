@@ -166,9 +166,6 @@ Do not commit an API key, AWS credential, account-specific ARN, or private endpo
 - Average latency alone is incomplete; P95 and P99 expose slower requests that affect user experience.
 - Optimization is complete only after the selected configuration is validated again using the same load-test conditions.
 
-## Cleanup
-
-To avoid ongoing charges after completing the lab, remove resources that are no longer needed, including the API Gateway API, Lambda function, DynamoDB table, IAM role, and Lambda Power Tuning application/stack.
 
 ## References
 

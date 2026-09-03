@@ -123,8 +123,6 @@ There is no universally correct Lambda memory setting:
 
 For a user-facing API, I would also consider the end-to-end latency objective before selecting the final configuration. The next validation step would be to select a memory setting and repeat the same Postman test under identical conditions. That would produce a controlled before-and-after comparison of average latency, P95, P99, throughput, and error rate.
 
-The current screenshots do **not** represent a controlled before-and-after comparison. The 389 ms Postman value is end-to-end response time under load, while the Power Tuning graph reports Lambda invocation duration during a separate test.
-
 ## AWS Well-Architected alignment
 
 This experiment supports two pillars of the [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html):
@@ -156,15 +154,6 @@ Power Tuning invokes the target function and can perform real database or extern
 6. Choose the **Ramp up** load profile, 10 virtual users, and a two-minute duration.
 7. Run the test and review throughput, average response time, percentile latency, and errors.
 
-Do not commit an API key, AWS credential, account-specific ARN, or private endpoint to the repository.
-
-## Key takeaways
-
-- Serverless performance decisions should be based on measurements rather than memory size alone.
-- Higher Lambda memory can substantially reduce execution duration because it also provides more CPU.
-- The cheapest configuration and fastest configuration may be different.
-- Average latency alone is incomplete; P95 and P99 expose slower requests that affect user experience.
-- Optimization is complete only after the selected configuration is validated again using the same load-test conditions.
 
 
 ## References

@@ -56,7 +56,7 @@ These results answer different questions and should not be compared as if they w
 
 I configured a two-minute ramp-up test with 10 virtual users and sent `POST` requests to the API Gateway endpoint.
 
-![Postman performance-test results](images/postman_performance.png)
+![Postman performance-test results](postman_performance.png)
 
 ### Observed results
 
@@ -102,7 +102,7 @@ I tested the function at `128`, `256`, `512`, and `1024` MB. Each setting was in
 
 ### Tuning results
 
-![AWS Lambda Power Tuning results](images/power_tuning_results.png)
+![AWS Lambda Power Tuning results](power_tuning_results.png)
 
 The results show a clear cost-performance tradeoff:
 
